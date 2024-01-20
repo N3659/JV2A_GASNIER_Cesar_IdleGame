@@ -15,20 +15,16 @@ public class Price_Upgrade : MonoBehaviour
 
     public ClassicClic classicClic;
 
+    public Autoclicker startAutoClicker;
+
+    public Upgrade_Drink Unlocked;
+
     void Start()
     {
         Price_Upgrade_Pclic = 10;
         Price_Upgrade_AC = 250;
-        Price_Upgrade_UD = 500;
+        Price_Upgrade_UD = 1;
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-        
-        
     }
 
     public void Rise_Cost_Pclic (int amount)
@@ -44,13 +40,15 @@ public class Price_Upgrade : MonoBehaviour
 
     public void Rise_Cost_AC(int amount)
     {
+
         if (_scoreManager._score >= Price_Upgrade_AC)
         {
             _scoreManager.RiseScore(-Price_Upgrade_AC);
             Price_Upgrade_AC = Price_Upgrade_AC * amount;
             Price_Text_AC.text = Price_Upgrade_AC.ToString();
-            classicClic.UpgradeClick();
+            startAutoClicker.StartAutoClicker();
         }
+
     }
 
     public void Rise_Cost_UB(int amount)
@@ -60,7 +58,7 @@ public class Price_Upgrade : MonoBehaviour
             _scoreManager.RiseScore(-Price_Upgrade_UD);   
             Price_Upgrade_UD = Price_Upgrade_UD * amount;
             Price_Clic_UB.text = Price_Upgrade_UD.ToString();
-            classicClic.UpgradeClick();
+            Unlocked.UnlockDrink();
         }
     }
 }

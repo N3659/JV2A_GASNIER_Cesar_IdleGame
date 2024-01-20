@@ -11,14 +11,14 @@ public class Upgrade_Drink : MonoBehaviour
 
     private int index;
 
-    public void OnMouseDown()
+    public void UnlockDrink()
     {
-        if(index>=Drinks2.Count)
+        if (index >= Drinks2.Count)
         {
             return;
         }
 
-        Drinks2[index].interactable =true;
-        index++;    
+        Drinks2[index].interactable = true;
+        index++;
     }
 }

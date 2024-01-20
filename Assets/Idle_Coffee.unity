@@ -1214,18 +1214,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 797048047}
-        m_TargetAssemblyTypeName: Autoclicker, Assembly-CSharp
-        m_MethodName: StartAutoClicker
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!114 &858328288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1523,6 +1511,7 @@ MonoBehaviour:
   Price_Text_AC: {fileID: 1804082302}
   Price_Clic_UB: {fileID: 1124837978}
   classicClic: {fileID: 539777324}
+  startAutoClicker: {fileID: 797048047}
 --- !u!1 &1124837976
 GameObject:
   m_ObjectHideFlags: 0
@@ -3159,7 +3148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Autoclicker go
+  m_text: Autoclicker
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c6ff005a3bd59d14db7fc2f44fd63cfd, type: 2}
   m_sharedMaterial: {fileID: -1438612473491031752, guid: c6ff005a3bd59d14db7fc2f44fd63cfd, type: 2}
